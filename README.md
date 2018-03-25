@@ -17,4 +17,19 @@ You will need a Heron either running on your local or in a remote environment. R
 going.  Read [this doc](https://twitter.github.io/heron/docs/getting-started/) for getting set up.  
 All of these topologies are built with Maven and your typical Java setup.
 
+## How To Build
+All commands specified in this tutorial assume you
+are working in macOS and have `heron` inluded in your `$PATH`.  Run the below in the root folder of the project.
+
+```bash
+$ mvn assembly:assembly
+```
+
+## Table of Contents
+
+* [Configuring Output Fields with Property Injection](docs/dynamic-output-field.md)
+
 ## This document and project will continually be updated. Check back soon. 
+
+If you experience any issues while walking through the examples please file an issue in the repo.  I will get to it
+as soon as I can.  
