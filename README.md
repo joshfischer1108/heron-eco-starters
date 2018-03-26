@@ -27,13 +27,13 @@ $ mvn assembly:assembly
 
 ## Table of Contents
 
-* [Using Constructor Injection](docs/constructor-injection.md)
+* [Constructor Injection](docs/constructor-injection.md)
 
-* [Using Setter Injection](docs/setter-injection.md)
+* [Setter Injection](docs/setter-injection.md)
 
-* [Using Public Field Injection](docs/public-field-injection.md)
+* [Public Field Injection](docs/public-field-injection.md)
 
-* [Using Configuration Methods](docs/configuration-methods.md)
+* [Configuration Methods](docs/configuration-methods.md)
 
 
 ## This document and project will continually be updated. Check back soon. 
