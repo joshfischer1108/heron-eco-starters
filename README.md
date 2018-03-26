@@ -38,3 +38,8 @@ $ mvn assembly:assembly
 
 If you experience any issues while walking through the examples please file an issue in the repo.  I will get to it
 as soon as I can.  
+
+### Disclaimer !!!!
+
+**It should be noted that even though the ECO definition topology files
+are in the `src/main/resources` directory this is not a suggestion or a requirement.**
