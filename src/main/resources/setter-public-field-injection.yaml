@@ -1,6 +1,6 @@
 
 
-name: "setter-injection-example"
+name: "field-injection-example"
 
 config:
   topology.workers: 1
@@ -21,7 +21,10 @@ spouts:
 
 bolts:
   - id: "print-bolt"
-    className: "org.apache.heron.eco.starters.SystemOutBolt"
+    className: "org.apache.heron.eco.starters.ConfigurableSystemOutBolt"
+    properties:
+      - name: "someFloat"
+        value: 123
     parallelism: 1
 
 streams:

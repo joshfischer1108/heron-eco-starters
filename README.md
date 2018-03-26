@@ -29,9 +29,7 @@ $ mvn assembly:assembly
 
 * [Constructor Injection](docs/constructor-injection.md)
 
-* [Setter Injection](docs/setter-injection.md)
-
-* [Public Field Injection](docs/public-field-injection.md)
+* [Setter & Public Field Injection](docs/setter-public-field-injection.md)
 
 * [Configuration Methods](docs/configuration-methods.md)
 
