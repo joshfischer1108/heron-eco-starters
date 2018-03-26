@@ -31,6 +31,8 @@ $ mvn assembly:assembly
 
 * [Using Setter Injection](docs/setter-injection.md)
 
+* [Using Public Field Injection](docs/public-field-injection.md)
+
 * [Using Configuration Methods](docs/configuration-methods.md)
 
 
