@@ -8,7 +8,7 @@ Run an example that uses setter injection:
 $ heron submit local \
   target/eco-starters-1.0-SNAPSHOT-jar-with-dependencies.jar \
   com.twitter.heron.eco.Eco \
-  --eco-config-file src/main/resources/setter-public-field-injection.yaml
+  --eco-config-file yaml/setter-public-field-injection.yaml
 ```
 
 You can also use ECO to set properties via setter methods.  In the below YAML spec ECO

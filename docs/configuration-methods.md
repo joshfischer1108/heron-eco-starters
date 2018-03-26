@@ -8,7 +8,7 @@ Run an example that uses a configuration method:
 $ heron submit local \
   target/eco-starters-1.0-SNAPSHOT-jar-with-dependencies.jar \
   com.twitter.heron.eco.Eco \
-  --eco-config-file src/main/resources/config-method.yaml
+  --eco-config-file yaml/config-method.yaml
 ```
 
 In the `ConfigurableFibonacciSpout` we can call any configuration method needed

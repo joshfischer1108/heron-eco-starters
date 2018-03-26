@@ -8,7 +8,7 @@ Run an example that uses constructor injection:
 $ heron submit local \
   target/eco-starters-1.0-SNAPSHOT-jar-with-dependencies.jar \
   com.twitter.heron.eco.Eco \
-  --eco-config-file src/main/resources/constructor-injection.yaml
+  --eco-config-file yaml/constructor-injection.yaml
 ```
 In this ECO config file in the spout is set to accept a single `String` argument and has a value of `"number"`. 
 

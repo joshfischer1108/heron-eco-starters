@@ -42,4 +42,4 @@ as soon as I can.
 ### Disclaimer !!!!
 
 **It should be noted that even though the ECO definition topology files
-are in the `src/main/resources` directory this is not a suggestion or a requirement.**
+are in the `yaml` directory this is not a suggestion or a requirement.**
