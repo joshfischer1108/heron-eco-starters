@@ -1,6 +1,8 @@
 
 # Heron ECO Starters
 
+![logo](static/img/HeronTextLogo.png)
+
 This is a collection of examples and best practices on how to 
 design and implement your Heron topologies using ECO API.
 
