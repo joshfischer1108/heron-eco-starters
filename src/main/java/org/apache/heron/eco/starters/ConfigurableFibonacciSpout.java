@@ -42,7 +42,7 @@ public class ConfigurableFibonacciSpout extends BaseRichSpout {
         this.fieldName = fieldName;
     }
 
-    public void configureNumberSpout(String fieldName) {
+    public void configureSpout(String fieldName) {
         this.fieldName = fieldName;
     }
 

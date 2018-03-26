@@ -15,7 +15,7 @@ spouts:
   - id: "configurable-spout"
     className: "org.apache.heron.eco.starters.ConfigurableFibonacciSpout"
     configMethods:
-      - name: "configureNumberSpout"
+      - name: "configureSpout"
         args:
           - "number"
 
