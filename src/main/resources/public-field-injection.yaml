@@ -1,0 +1,32 @@
+
+
+name: "public-field-injection-example"
+
+config:
+  topology.workers: 1
+
+################
+# This ECO topology demonstrates how you can declare output fields dynamically via public field injection
+###############
+
+spouts:
+
+# This spout demonstrates how to declare output fields using setter injection
+  - id: "configurable-spout"
+    className: "org.apache.heron.eco.starters.PublicFieldFibonacciSpout"
+    properties:
+      - name: "fieldName"
+        value: "number"
+    parallelism: 1
+
+bolts:
+  - id: "print-bolt"
+    className: "org.apache.heron.eco.starters.SystemOutBolt"
+    parallelism: 1
+
+streams:
+  - from: "configurable-spout"
+    to: "print-bolt"
+    grouping:
+      type: FIELDS
+      args: ["number"]

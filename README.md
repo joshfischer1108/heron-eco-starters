@@ -27,7 +27,12 @@ $ mvn assembly:assembly
 
 ## Table of Contents
 
-* [Property Injection](docs/property-injection.md)
+* [Using Constructor Injection](docs/constructor-injection.md)
+
+* [Using Setter Injection](docs/setter-injection.md)
+
+* [Using Configuration Methods](docs/configuration-methods.md)
+
 
 ## This document and project will continually be updated. Check back soon. 
 
