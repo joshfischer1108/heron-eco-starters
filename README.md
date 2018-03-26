@@ -27,7 +27,7 @@ $ mvn assembly:assembly
 
 ## Table of Contents
 
-* [Configuring Output Fields with Property Injection](docs/dynamic-output-field.md)
+* [Property Injection](docs/property-injection.md)
 
 ## This document and project will continually be updated. Check back soon. 
 
