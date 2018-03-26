@@ -34,7 +34,6 @@ public class ConfigurableFibonacciSpout extends BaseRichSpout {
     public ConfigurableFibonacciSpout() {
     }
 
-
     public ConfigurableFibonacciSpout(String fieldName) {
         this.fieldName = fieldName;
     }

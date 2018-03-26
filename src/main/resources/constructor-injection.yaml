@@ -17,15 +17,6 @@ spouts:
       - "number"
     parallelism: 1
 
-
-# This spout demonstrates how to declare output fields using a config method
-#  - id: "configurable-spout"
-#    className: "org.apache.heron.eco.starters.ConfigurableFibonacciSpout"
-#    configMethods:
-#      - name: "configureNumberSpout"
-#        args:
-#          - "number"
-
 bolts:
   - id: "print-bolt"
     className: "org.apache.heron.eco.starters.SystemOutBolt"

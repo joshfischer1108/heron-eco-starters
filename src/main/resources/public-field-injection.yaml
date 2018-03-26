@@ -11,7 +11,7 @@ config:
 
 spouts:
 
-# This spout demonstrates how to declare output fields using setter injection
+# This spout demonstrates how to declare output fields using public field injection
   - id: "configurable-spout"
     className: "org.apache.heron.eco.starters.PublicFieldFibonacciSpout"
     properties:
