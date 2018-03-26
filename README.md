@@ -17,11 +17,11 @@ Check here here for more in depth documentation: https://twitter.github.io/heron
 
 You will need a Heron either running on your local or in a remote environment. Running locally is the easiest to get
 going.  Read [this doc](https://twitter.github.io/heron/docs/getting-started/) for getting set up.  
-All of these topologies are built with Maven and your typical Java setup.
+All of these topologies are built with Maven and your typical Java setup.  All commands specified in this tutorial assume you
+are working in macOS and have `heron` inluded in your `$PATH`. 
 
 ## How To Build
-All commands specified in this tutorial assume you
-are working in macOS and have `heron` inluded in your `$PATH`.  Run the below in the root folder of the project.
+Run the below in the root folder of the project.
 
 ```bash
 $ mvn assembly:assembly
