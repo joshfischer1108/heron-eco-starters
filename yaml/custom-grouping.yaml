@@ -13,13 +13,32 @@ spouts:
 
   - id: "wordSpout"
     className: "org.apache.heron.eco.starters.WordSpout"
+    parallelism: 1
 
 bolts:
   - id: "printBolt"
     className: "org.apache.heron.eco.starters.SystemOutBolt"
+    parallelism: 4
 
 streams:
+
   - from: "wordSpout"
     to: "printBolt"
     grouping:
-      type: SHUFFLE
+      type: CUSTOM
+      customClass:
+        className: "org.apache.heron.eco.starters.CustomGrouping"
+
+
+# The below example is from Storm docs
+
+
+#      - name: "bolt-1 --> bolt2"
+#          from: "bolt-1"
+#          to: "bolt-2"
+#          grouping:
+#            type: CUSTOM
+#            customClass:
+#              className: "org.apache.storm.testing.NGrouping"
+#              constructorArgs:
+#                - 1
