@@ -30,6 +30,7 @@ streams:
         className: "org.apache.heron.eco.starters.CustomGrouping"
 
 
+
 # The below example is from Storm docs
 
 
@@ -40,5 +41,3 @@ streams:
 #            type: CUSTOM
 #            customClass:
 #              className: "org.apache.storm.testing.NGrouping"
-#              constructorArgs:
-#                - 1
