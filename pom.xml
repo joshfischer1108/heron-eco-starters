@@ -20,6 +20,11 @@
             <version>0.17.7</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.pulsar</groupId>
+            <artifactId>pulsar-client</artifactId>
+            <version>1.22.0-incubating</version>
+        </dependency>
     </dependencies>
 
     <build>

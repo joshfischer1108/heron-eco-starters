@@ -1,0 +1,40 @@
+
+
+name: "pulsar-example"
+
+config:
+  topology.workers: 1
+
+components:
+
+  - id: "time-unit"
+    className: "java.util.concurrent.TimeUnit"
+
+  - id: "pulsar-producer-config"
+    className: "org.apache.pulsar.client.api.ProducerConfiguration"
+    properties:
+      - name: "batchingEnabled"
+        value: true
+      - name: "batchingMaxMessages"
+        value: 5000
+      - name: "blockIfQueueFull"
+        value: true
+      - name: "maxPendingMessages"
+        value: 20000
+    configMethods:
+      - name: "sampleConfigurationMethod"
+        args:
+          - 10
+          - SECONDS
+
+spouts:
+  # TODO
+
+bolts:
+  # TODO
+
+streams:
+  # TODO
+
+
+
