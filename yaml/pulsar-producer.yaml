@@ -7,34 +7,39 @@ config:
 
 components:
 
-  - id: "time-unit"
-    className: "java.util.concurrent.TimeUnit"
-
   - id: "pulsar-producer-config"
-    className: "org.apache.pulsar.client.api.ProducerConfiguration"
-    properties:
-      - name: "batchingEnabled"
-        value: true
-      - name: "batchingMaxMessages"
-        value: 5000
-      - name: "blockIfQueueFull"
-        value: true
-      - name: "maxPendingMessages"
-        value: 20000
+    className: "org.apache.pulsar.client.api.ConsumerConfiguration"
     configMethods:
-      - name: "sampleConfigurationMethod"
+      - name: "setAckTimeout"
         args:
           - 10
           - SECONDS
 
 spouts:
-  # TODO
+  - id: "pulsar-spout"
+    className: "org.apache.heron.eco.starters.PulsarSpout"
+    properties:
+      - name: "consumerConfiguration"
+        ref: "pulsar-producer-config"
+      - name: "pulsarBrokerRootUrl"
+        value: "pulsar://localhost:6650"
+      - name: "pulsarTopic"
+        value: "persistent://sample/standalone/ns1/my-topic"
+      - name: "pulsarSubscription"
+        value: "my-subscription"
+
 
 bolts:
-  # TODO
+  - id: "print-bolt"
+    className: "org.apache.heron.eco.starters.SystemOutBolt"
+    parallelism: 1
 
 streams:
-  # TODO
+  - from: "pulsar-spout"
+    to: "print-bolt"
+    grouping:
+      type: SHUFFLE
+      args: ["number"]
 
 
 
